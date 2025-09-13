@@ -3,7 +3,6 @@ import { PeakLoad } from '@/components/stats/PeakLoad';
 import { Usage } from '@/components/stats/Usage';
 import { Box, Flex, Heading, Separator } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
-import { SectionLoader } from '@/components/loader/SectionLoader';
 import { ChartFilters } from '@/components/charts/ChartFilters';
 import { NavigationButton } from '@/components/stats/NavigationButton';
 import { useNavigate } from 'react-router-dom';
@@ -29,29 +28,12 @@ export const Analytics = () => {
     }, 1000);
   }, []);
 
-  if (isRedirecting) {
-    return <PageLoader title="Preparing your forecast..." />;
+  if (isLoading) {
+    return <PageLoader title="Loading the analytics..." />;
   }
 
-  if (isLoading) {
-    return (
-      <Box p={4}>
-        <SectionLoader />
-        <Heading size="2xl" mb={2}>
-          Energy Insights
-        </Heading>
-        <Separator mb="4" />
-        <SectionLoader />
-
-        <Box mt={8}>
-          <Heading size="2xl" mb={2}>
-            Usage History
-          </Heading>
-          <Separator mb="4" />
-          <SectionLoader />
-        </Box>
-      </Box>
-    );
+  if (isRedirecting) {
+    return <PageLoader title="Preparing your forecast..." />;
   }
 
   return (

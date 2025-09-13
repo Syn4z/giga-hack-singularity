@@ -62,9 +62,10 @@ We developed a **mobile application** that turns raw consumption data into actio
    git clone <repository-url>
    ```
 
-2. Install the dependencies:
+2. Install the dependencies in the `frontend` directory:
 
    ```bash
+   cd application/frontend
    npm install
    ```
 
@@ -72,6 +73,9 @@ We developed a **mobile application** that turns raw consumption data into actio
    ```bash
    npm run dev
    ```
+4. Open the app in your browser or mobile simulator at [http://localhost:5555](http://localhost:5555).
+
+**NOTE**: Make sure you select a mobile device in the browser to see the mobile layout.
 
 ---
 

@@ -1,9 +1,20 @@
 import { Box, Tabs } from '@chakra-ui/react';
 import { ChartTip } from '../ChartTip';
 import { HistoryForecast } from './HistoryForecast';
-import { DAILY_FORECAST_TIPS, MONTHLY_FORECAST_TIPS, WEEKLY_FORECAST_TIPS, YEARLY_FORECAST_TIPS } from '@/assets/data/forecast_tips';
+import {
+  DAILY_FORECAST_TIPS,
+  MONTHLY_FORECAST_TIPS,
+  WEEKLY_FORECAST_TIPS,
+  YEARLY_FORECAST_TIPS,
+} from '@/assets/data/forecast_tips';
 
 export const ChartTabsForecast = () => {
+  const boxStyles = {
+    position: 'relative',
+    zIndex: 100,
+    top: '-50px',
+  };
+
   return (
     <Tabs.Root defaultValue="daily">
       <Tabs.List display={'flex'} justifyContent={'center'}>
@@ -14,7 +25,7 @@ export const ChartTabsForecast = () => {
       </Tabs.List>
       <Tabs.Content value="daily">
         <HistoryForecast period={['day']} />
-        <Box position={'relative'} zIndex={100} top={'-60px'}>
+        <Box {...boxStyles}>
           {DAILY_FORECAST_TIPS.map((tip, index) => (
             <ChartTip
               key={index}
@@ -28,7 +39,7 @@ export const ChartTabsForecast = () => {
       </Tabs.Content>
       <Tabs.Content value="weekly">
         <HistoryForecast period={['week']} />
-        <Box position={'relative'} zIndex={100} top={'-60px'}>
+        <Box {...boxStyles}>
           {WEEKLY_FORECAST_TIPS.map((tip, index) => (
             <ChartTip
               key={index}
@@ -42,7 +53,7 @@ export const ChartTabsForecast = () => {
       </Tabs.Content>
       <Tabs.Content value="monthly">
         <HistoryForecast period={['month']} />
-        <Box position={'relative'} zIndex={100} top={'-60px'}>
+        <Box {...boxStyles}>
           {MONTHLY_FORECAST_TIPS.map((tip, index) => (
             <ChartTip
               key={index}
@@ -56,7 +67,7 @@ export const ChartTabsForecast = () => {
       </Tabs.Content>
       <Tabs.Content value="yearly">
         <HistoryForecast period={['year']} />
-          <Box position={'relative'} zIndex={100} top={'-60px'}>
+        <Box {...boxStyles}>
           {YEARLY_FORECAST_TIPS.map((tip, index) => (
             <ChartTip
               key={index}

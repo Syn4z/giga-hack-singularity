@@ -3,7 +3,6 @@ import {
   Area,
   AreaChart,
   CartesianGrid,
-  Legend,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -83,7 +82,6 @@ export const Month = () => {
             cursor={{ strokeDasharray: '3 3' }}
             content={<Chart.Tooltip />}
           />
-          <Legend content={<Chart.Legend />} />
           <Area
             type="monotone"
             isAnimationActive={false}

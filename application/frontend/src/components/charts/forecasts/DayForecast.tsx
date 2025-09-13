@@ -2,7 +2,6 @@ import { Chart, useChart } from '@chakra-ui/charts';
 import {
   AreaChart,
   CartesianGrid,
-  Legend,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -75,7 +74,6 @@ export const DayForecast = () => {
             cursor={{ strokeDasharray: '3 3' }}
             content={<Chart.Tooltip />}
           />
-          <Legend content={<Chart.Legend />} />
 
           {/* Forecast (dashed line for whole day) */}
           <Line

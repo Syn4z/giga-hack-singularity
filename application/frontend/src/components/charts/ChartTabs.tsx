@@ -4,6 +4,12 @@ import { DAILY_TIPS, MONTHLY_TIPS, WEEKLY_TIPS, YEARLY_TIPS } from '@/assets/dat
 import { History } from './periods/History';
 
 export const ChartTabs = () => {
+  const boxStyles = {
+    position: 'relative',
+    zIndex: 100,
+    top: '-50px',
+  };
+
   return (
     <Tabs.Root defaultValue="daily">
       <Tabs.List display={'flex'} justifyContent={'center'}>
@@ -14,7 +20,7 @@ export const ChartTabs = () => {
       </Tabs.List>
       <Tabs.Content value="daily">
         <History period={['day']} />
-        <Box position={'relative'} zIndex={100} top={'-60px'}>
+        <Box {...boxStyles}>
           {DAILY_TIPS.map((tip, index) => (
             <ChartTip
               key={index}
@@ -28,7 +34,7 @@ export const ChartTabs = () => {
       </Tabs.Content>
       <Tabs.Content value="weekly">
         <History period={['week']} />
-        <Box position={'relative'} zIndex={100} top={'-60px'}>
+        <Box {...boxStyles}>
           {WEEKLY_TIPS.map((tip, index) => (
             <ChartTip
               key={index}
@@ -42,7 +48,7 @@ export const ChartTabs = () => {
       </Tabs.Content>
       <Tabs.Content value="monthly">
         <History period={['month']} />
-        <Box position={'relative'} zIndex={100} top={'-60px'}>
+        <Box {...boxStyles}>
           {MONTHLY_TIPS.map((tip, index) => (
             <ChartTip
               key={index}
@@ -56,7 +62,7 @@ export const ChartTabs = () => {
       </Tabs.Content>
       <Tabs.Content value="yearly">
         <History period={['year']} />
-          <Box position={'relative'} zIndex={100} top={'-60px'}>
+        <Box {...boxStyles}>
           {YEARLY_TIPS.map((tip, index) => (
             <ChartTip
               key={index}

@@ -3,9 +3,6 @@ import { DayForecast } from './DayForecast';
 import { WeekForecast } from './WeekForecast';
 import { MonthForecast } from './MonthForecast';
 import { YearForecast } from './YearForecast';
-// import { Week } from './Week';
-// import { Month } from './Month';
-// import { Year } from './Year';
 
 interface HistoryProps {
   period: string[];

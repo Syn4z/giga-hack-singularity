@@ -30,6 +30,7 @@ export const Forecast = () => {
         <Separator />
         <ForecastCharts />
       </Box>
+      
       <Box mt={4}>
         <Heading size="2xl" mb={2}>
           Optimized Energy Consumption

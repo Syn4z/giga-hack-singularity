@@ -1,5 +1,13 @@
-import { Route, Routes } from "react-router-dom";
-import { Analytics, ConsumerForm, Forecast, Home, NotFound, Profile } from "./pages";
+import { Route, Routes } from 'react-router-dom';
+import {
+  Analytics,
+  ConsumerForm,
+  Forecast,
+  Home,
+  NotFound,
+  Profile,
+  Survey,
+} from './pages';
 
 function App() {
   return (
@@ -9,6 +17,7 @@ function App() {
       <Route path="/analytics" element={<Analytics />} />
       <Route path="/forecast" element={<Forecast />} />
       <Route path="/profile" element={<Profile />} />
+      <Route path="/survey" element={<Survey />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

@@ -39,6 +39,7 @@ export const Analytics = () => {
   return (
     <Box p={4}>
       <Navbar />
+
       <Flex
         flexDirection={'column'}
         alignItems={'center'}
@@ -56,6 +57,7 @@ export const Analytics = () => {
           You're on track this week
         </Heading>
       </Flex>
+
       <Heading size="2xl" mb={2}>
         Energy Insights
       </Heading>
@@ -72,6 +74,7 @@ export const Analytics = () => {
         <PeakLoad />
         <NavigationButton onClick={handleClick} />
       </Box>
+
       <Box mt={16}>
         <Heading size="2xl" mb={2}>
           Usage History

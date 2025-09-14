@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import {
   Analytics,
+  Chat,
   ConsumerForm,
   Forecast,
   Home,
@@ -18,6 +19,7 @@ function App() {
       <Route path="/forecast" element={<Forecast />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/survey" element={<Survey />} />
+      <Route path="/chat" element={<Chat />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

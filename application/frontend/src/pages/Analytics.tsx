@@ -8,6 +8,7 @@ import { NavigationButton } from '@/components/stats/NavigationButton';
 import { useNavigate } from 'react-router-dom';
 import { PageLoader } from '@/components/loader/PageLoader';
 import { Navbar } from '@/components/common/Navbar';
+import { FloatingButton } from '@/components/chat/FloatingButton';
 
 export const Analytics = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,8 +38,9 @@ export const Analytics = () => {
   }
 
   return (
-    <Box p={4}>
+    <Box p={4} position={'relative'}>
       <Navbar />
+      <FloatingButton />
 
       <Flex
         flexDirection={'column'}
@@ -49,7 +51,7 @@ export const Analytics = () => {
         p={4}
         borderRadius={8}
       >
-        <Heading size="2xl">Hi, Thomas!</Heading>
+        <Heading size="2xl">Hi, Andrei!</Heading>
         <Heading size="md" fontWeight="normal" color="gray.600" mb={4}>
           Sunday, Sept 14, 2025
         </Heading>

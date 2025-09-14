@@ -49,7 +49,7 @@ export const Analytics = () => {
         p={4}
         borderRadius={8}
       >
-        <Heading size="2xl">Hi, Thomas!</Heading>
+        <Heading size="2xl">Hi, Andrei!</Heading>
         <Heading size="md" fontWeight="normal" color="gray.600" mb={4}>
           Sunday, Sept 14, 2025
         </Heading>

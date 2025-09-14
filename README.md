@@ -62,7 +62,7 @@ We developed a **mobile application** that turns raw consumption data into actio
 ## 🛠️ Tech Stack
 
 - **Frontend (Mobile App):** React Native
-- **Backend & API:** Node.js / Express
+- **Backend & API:** FastAPI
 - **Data Science & ML:** Python (pandas, scikit-learn)
 - **Database:** PostgreSQL
 - **Deployment:** Docker (prototype phase)

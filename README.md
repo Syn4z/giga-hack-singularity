@@ -20,6 +20,19 @@ This challenge invited participants to build a prototype system that unlocks the
 
 We developed a **mobile application** that turns raw consumption data into actionable insights for everyday users.
 
+## Frontend Screenshots
+### Home Screen
+![alt text](./docs/screenshots/home.png)
+
+### Forecast Page
+![alt text](./docs/screenshots/forecast.png)
+
+### Profile Page
+![alt text](./docs/screenshots/profile.png)
+
+### Custom Recomandations Survey
+![alt text](./docs/screenshots/survey.png)
+
 ### Main Features
 
 - **Dashboard (Home Screen):**

@@ -12,22 +12,17 @@ import {
 } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import {
-  HiGlobeAlt,
-  HiLockClosed,
-  HiShieldCheck,
-  HiUser,
+  HiChip,
 } from 'react-icons/hi';
 import { useNavigate } from 'react-router-dom';
 
 const items = [
-  { icon: <HiShieldCheck />, label: 'Admin', description: 'Give full access' },
-  { icon: <HiUser />, label: 'User', description: 'Give limited access' },
-  {
-    icon: <HiGlobeAlt />,
-    label: 'Guest',
-    description: 'Give read-only access',
-  },
-  { icon: <HiLockClosed />, label: 'Blocked', description: 'No access' },
+  { icon: <HiChip />, label: 'Fridge' },
+  { icon: <HiChip />, label: 'Dryer' },
+  { icon: <HiChip />, label: 'Washing Machine' },
+  { icon: <HiChip />, label: 'Iron' },
+  { icon: <HiChip />, label: 'Kettle' },
+  { icon: <HiChip />, label: 'Air Conditioner' }
 ];
 
 export const Survey = () => {

@@ -2,6 +2,7 @@ import { DAILY_OPTIMIZE_TIPS } from '@/assets/data/optimize_tips';
 import { ChartTip } from '@/components/charts/ChartTip';
 import { ForecastCharts } from '@/components/charts/ForecastCharts';
 import { OptimizedDayForecast } from '@/components/charts/forecasts/OptimizedDayForecast';
+import { FloatingButton } from '@/components/chat/FloatingButton';
 import { Navbar } from '@/components/common/Navbar';
 import { PageLoader } from '@/components/loader/PageLoader';
 import { Box, Heading, Separator, Text } from '@chakra-ui/react';
@@ -23,6 +24,8 @@ export const Forecast = () => {
   return (
     <Box p={4}>
       <Navbar />
+      <FloatingButton />
+
       <Box mt={4}>
         <Heading size="2xl" mb={2}>
           Predictions
